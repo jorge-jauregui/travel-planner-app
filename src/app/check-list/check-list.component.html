@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-xs-10">
+    <app-check-list-edit></app-check-list-edit>
+    <hr>
+    <ul class="list-group">
+      <a *ngFor="let activity of activities" class="list-group-item" style="cursor: pointer">
+        {{activity.name}}
+        {{activity.completed}}
+      </a>
+    </ul>
+  </div>
+</div>

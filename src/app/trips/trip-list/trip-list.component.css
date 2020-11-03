@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+p.trip-header {
+  padding-top: 10px;
+  font-family: 'Lato';
+  font-size: 25px;
+  font-weight: bolder;
+  padding-left: 50px;
+}
+a.add-trip {
+  color: black;
+  float: right;
+}
+
+a.add-trip:hover {
+  color: #666666;
+}
+
+::ng-deep .tooltip-inner{
+  background-color: #202020;
+  border-radius: 10px;
+  margin-right: 15px;
+  position: relative;
+  bottom: 5px;
+}
+
+::ng-deep .tooltip .arrow::before {
+  border-bottom-color: #666666;
+  position: absolute;
+  top: -5px;
+}
+
+div.col-xs-6 {
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+div.card {
+  border-radius: 0.1px;
+  width: 250px;
+  background-color: #fbf2e9;
+  color: black;
+  margin-bottom: 25px;
+  cursor: pointer;
+  border: 10px solid #fbf2e9;
+
+  -webkit-box-shadow: 2px 6px 6px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 2px 6px 6px 0px rgba(0, 0, 0, 1);
+  box-shadow: 2px 6px 6px 0px rgba(0, 0, 0, 1);
+}
+div.card:hover {
+  opacity: 0.6;
+}
+
+img.trip-image {
+  border-radius: 0.1px;
+}
+
+p.card-text {
+  /* margin: auto; */
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  line-height: 80%;
+}
+p.title {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
