@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Trip } from '../trip.model';
 
 @Component({
@@ -7,6 +7,7 @@ import { Trip } from '../trip.model';
   styleUrls: ['./trip-list.component.css']
 })
 export class TripListComponent implements OnInit {
+  @Output() tripWasSelected = new EventEmitter<Trip>();
   trips: Trip[] = [
     new Trip(
       'Winter exploration in Yosemite',
@@ -33,6 +34,10 @@ export class TripListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onTripSelected(trip: Trip) {
+    this.tripWasSelected.emit(trip);
   }
 
 }

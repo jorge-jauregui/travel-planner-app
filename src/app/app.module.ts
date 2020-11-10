@@ -7,9 +7,9 @@ import { BottomDashboardComponent } from './bottom-dashboard/bottom-dashboard.co
 import { TripsComponent } from './trips/trips.component';
 import { TripListComponent } from './trips/trip-list/trip-list.component';
 import { TripDetailComponent } from './trips/trip-detail/trip-detail.component';
-import { ActivityItemComponent } from './trips/trip-list/activity-item/activity-item.component';
-import { CheckListComponent } from './check-list/check-list.component';
-import { CheckListEditComponent } from './check-list/check-list-edit/check-list-edit.component';
+import { TripItemComponent } from './trips/trip-list/trip-item/trip-item.component';
+import { BucketListComponent } from './bucket-list/bucket-list.component';
+import { BucketListEditComponent } from './bucket-list/bucket-list-edit/bucket-list-edit.component';
 import { HeaderComponent } from './header/header.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -21,9 +21,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TripsComponent,
     TripListComponent,
     TripDetailComponent,
-    ActivityItemComponent,
-    CheckListComponent,
-    CheckListEditComponent,
+    TripItemComponent,
+    BucketListComponent,
+    BucketListEditComponent,
     HeaderComponent,
   ],
   imports: [

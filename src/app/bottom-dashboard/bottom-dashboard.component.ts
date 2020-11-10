@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-bottom-dashboard',
@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
 })
 
 export class BottomDashboardComponent {
+  @Output() sectionSelected = new EventEmitter<string>();
 
+  onSelect(section: string) {
+    this.sectionSelected.emit(section);
+  }
 }

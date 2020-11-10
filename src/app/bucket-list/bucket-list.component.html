@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-xs-10">
+    <app-bucket-list-edit
+      (bucketListItemAdded)="onBucketListItemAdded($event)">
+    </app-bucket-list-edit>
+    <hr>
+    <ul class="list-group">
+      <a *ngFor="let bucketListItem of bucketListItems" class="list-group-item" style="cursor: pointer">
+        {{bucketListItem.name}}
+        {{bucketListItem.completed}}
+      </a>
+    </ul>
+  </div>
+</div>

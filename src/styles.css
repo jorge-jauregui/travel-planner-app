@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* Fixed-bottom on navbar covers bottom html content, so I added an margin-bottom on html to fix. */
 html {
   background-color: #0d0d0d;
+  margin-bottom: 80px;
 }
 body {
   background: url('../src/assets/paper.jpg') no-repeat center center fixed;

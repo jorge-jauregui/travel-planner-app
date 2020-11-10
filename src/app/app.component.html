@@ -2,9 +2,9 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <app-trips></app-trips>
-      <app-check-list></app-check-list>
+      <app-trips *ngIf="loadedSection === 'trip'"></app-trips>
+      <app-bucket-list *ngIf="loadedSection !== 'trip'"></app-bucket-list>
     </div>
   </div>
 </div>
-<app-bottom-dashboard></app-bottom-dashboard>
+<app-bottom-dashboard (sectionSelected)="onNavigate($event)"></app-bottom-dashboard>

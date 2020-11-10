@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+div.col-xs-6 {
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+div.card {
+  border-radius: 0.1px;
+  width: 250px;
+  background-color: #fbf2e9;
+  color: black;
+  margin-bottom: 25px;
+  cursor: pointer;
+  border: 10px solid #fbf2e9;
+
+  -webkit-box-shadow: 2px 6px 6px 0px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 2px 6px 6px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 6px 6px 0px rgba(0, 0, 0, 0.8);
+}
+div.card:hover {
+  opacity: 0.7;
+}
+
+img.trip-image {
+  border-radius: 0.1px;
+}
+
+p.card-text {
+  /* margin: auto; */
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  line-height: 80%;
+}
+p.title {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+a.list-group-item {
+  color: black;
+  background-color: white;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  margin: 5px 5px 5px 5px;
+
+  -webkit-box-shadow: 2px 6px 6px 0px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 2px 6px 6px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 6px 6px 0px rgba(0, 0, 0, 0.8);
+}
+
+a.list-group-item:hover {
+  text-decoration: none;
+}
+
+/*Set height on row for until (see if routes change )*/
+div.row {
+  height: 600px;
+}

@@ -13,17 +13,10 @@
 
 
   <div class="row justify-content-center trip-list">
-    <div ngxMasonryItem *ngFor="let trip of trips" class="col-xs-6">
-        <div class="card">
-          <img class="card-img-top trip-image" src={{trip.imagePath}} alt="Card image cap">
-              <div class="row card-body">
-                  <div class="col-12">
-                      <p class="card-text title">{{trip.title}}</p>
-                      <p class="card-text desc">{{trip.description}}</p>
-                  </div>
-                </div>
-          </div>
-      </div>
+    <app-trip-item
+      *ngFor="let tripElement of trips"
+      [trip]="tripElement"
+      (tripSelected)="onTripSelected(tripElement)">
+    </app-trip-item>
   </div>
 
-<app-activity-item></app-activity-item>
